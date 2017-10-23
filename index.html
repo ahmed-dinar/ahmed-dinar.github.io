@@ -40,15 +40,20 @@ ga('send', 'pageview');
 				</div>
 
 				<div class="d-flex justify-content-center mt-4 social">
-					<a class="mr-3 tips" title="Linkedin" target="_blank" href="https://www.linkedin.com/in/ahmeddinar/"><i class="fa fa-linkedin-square" aria-hidden="true"></i></a>
+					<a class="mr-3 tips" title="madinar.cse@gmail.com" target="_top" href="mailto:madinar.cse@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+
+					<a class="mr-3 tips" title="Linkedin" target="_blank" href="https://www.linkedin.com/in/ahmeddinar/"><i class="fa fa-linkedin" aria-hidden="true"></i></a>
+
+					<a class="mr-3 tips" title="Twitter" target="_blank" href="https://twitter.com/ahmeddinarbd"><i class="fa fa-twitter" aria-hidden="true"></i></a>
+
 					<a class="mr-3 tips" title="Github" target="_blank" href="https://github.com/ahmed-dinar"><i class="fa fa-github" aria-hidden="true"></i></a>
-					<a class="mr-3 tips" title="Facebook" target="_blank" href="https://facebook.com/ahmeddinarbd"><i class="fa fa-facebook-square" aria-hidden="true"></i></a>
+					
 
 					<a class="mr-3 tips" title="Upwork" target="_blank" href="https://www.upwork.com/freelancers/~01c652d87c6bdad45a">
 						<img src="img/upwork.png" class="icon">
 					</a>
 
-					<a class="mr-3 tips" title="madinar.cse@gmail.com" target="_top" href="mailto:madinar.cse@gmail.com"><i class="fa fa-envelope" aria-hidden="true"></i></a>
+					
 
 					<a class="mr-3 tips" title="Codeforces" target="_blank" href="http://codeforces.com/profile/Ahmed_Dinar">
 						<img src="img/codeforces.png" class="icon">
@@ -61,6 +66,10 @@ ga('send', 'pageview');
 				</div>
 
 				<ul class="nav justify-content-center my-nav">
+				  <li class="nav-item">
+				    <a target="_blank" class="nav-link" href="http://blog.ahmeddinar.me/">BLOG</a>
+				  </li>
+				   <li class="nav-item nav-sep">/</li>
 				  <li class="nav-item">
 				    <a class="nav-link active" href="#about-section">ABOUT</a>
 				  </li>
@@ -76,10 +85,7 @@ ga('send', 'pageview');
 				  <li class="nav-item">
 				    <a class="nav-link" href="#feedbacks-section">FEEDBACKS</a>
 				  </li>
-				  <li class="nav-item nav-sep">/</li>
-				  <li class="nav-item">
-				    <a target="_blank" class="nav-link" href="http://blog.ahmeddinar.me/">BLOG</a>
-				  </li>
+				 
 				</ul>
 			</div>
 		</div>
@@ -342,7 +348,7 @@ ga('send', 'pageview');
 
 		<div class="footer p-2">
 			<div class="text-center">
-				Hosted with github pages<br>
+				Site powered by github pages<br>
 				© 2017 Ahmed Dinar. All rights reserved.
 			</div>
 		</div>
@@ -354,64 +360,4 @@ ga('send', 'pageview');
 <script type="text/javascript" src="js/bootstrap.min.js"></script>
 <script type="text/javascript" src="js/jquery.tipsy.js"></script>
 <script type="text/javascript" src="js/jquery.scrollTo.min.js"></script>
-<script type="text/javascript">
-
-	var myselfs = [
-		'PROBLEM SOLVER',
-		'COFFEE LOVER',
-		'TECHNOLOGY ENTHUSIAST',
-		'COMPETITIVE PROGRAMMING ENTHUSIAST',
-		'FULL STACK DEVELOPER'
-	];
-	var my = 0;
-
-	$(document).ready(function() {
-
-		$('.tips').tipsy({
-			fade: false,
-			gravity: 'n'
-		});
-
-	  $('.myself').text(myselfs[my].toUpperCase());
-	  setInterval(quoteTimer, 3000);
-
-
-	  $(".nav-link").on('click', function(event) {
-
-	    // Make sure this.hash has a value before overriding default behavior
-	    if (this.hash !== "") {
-	      // Prevent default anchor click behavior
-	      event.preventDefault();
-
-	      // Store hash
-	      var hash = this.hash;
-
-	      // Using jQuery's animate() method to add smooth page scroll
-	      // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-	      $('html, body').animate({
-	        scrollTop: $(hash).offset().top
-	      }, 800, function(){
-	   
-	        // Add hash (#) to URL when done scrolling (default click behavior)
-	        window.location.hash = hash;
-	      });
-	    } // End if
-	  });
-
-
-	});
-
-	var quoteTimer = function() {
-
-	  if (++my >= myselfs.length)
-	  	my = 0;
-	  
-	  $('.myself').fadeOut(200, function(){
-	    // $(this).text(myselfs[my].toUpperCase());
-	    $(this).text(myselfs[my].toUpperCase());
-	    $(this).fadeIn();
-	  });
-	  
-	}
-
-</script>
+<script type="text/javascript" src="js/portfolio.js"></script>
