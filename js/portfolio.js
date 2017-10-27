@@ -1,13 +1,42 @@
+
+
+
+    // ===== Scroll to Top (c) https://codepen.io/rdallaire/pen/apoyx/ ==== 
+    $(window).scroll(function() {
+        if ($(this).scrollTop() >= 100) {        // If page is scrolled more than 50px
+            $('#return-to-top').fadeIn(400);    // Fade in the arrow
+        } else {
+            $('#return-to-top').fadeOut(400);   // Else fade out the arrow
+        }
+    });
+    $('#return-to-top').click(function() {      // When arrow is clicked
+        $('body,html').animate({
+            scrollTop : 0                       // Scroll to top of body
+        }, 1000);
+    });
+
+
+
     var myselfs = [
         'PROBLEM SOLVER',
-        'COFFEE LOVER',
         'TECHNOLOGY ENTHUSIAST',
         'COMPETITIVE PROGRAMMING ENTHUSIAST',
-        'FULL STACK DEVELOPER'
+        'FULL STACK DEVELOPER',
+        'COFFEE LOVER'
     ];
     var my = 0;
 
+
     $(document).ready(function() {
+
+      //custom scrool bar
+      $(function() {  
+        $("body").niceScroll({
+          cursorwidth: "10px",
+          background: "#fff",
+          cursorborder: "1px solid transparent"
+        });
+      });
 
         $('.tips').tipsy({
             fade: false,
@@ -32,7 +61,7 @@
           // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
           $('html, body').animate({
             scrollTop: $(hash).offset().top
-          }, 800, function(){
+          }, 1000, function(){
        
             // Add hash (#) to URL when done scrolling (default click behavior)
             window.location.hash = hash;
