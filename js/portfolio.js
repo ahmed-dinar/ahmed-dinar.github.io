@@ -9,7 +9,7 @@
         'TECHNOLOGY ENTHUSIAST',
         'COMPETITIVE PROGRAMMING ENTHUSIAST',
         'FULL STACK DEVELOPER',
-        'COFFEE LOVER'
+        'SOFTWARE ENGINEER'
     ];
     var my = 0;
 
