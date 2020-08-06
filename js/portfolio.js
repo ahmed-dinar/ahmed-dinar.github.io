@@ -5,11 +5,11 @@
 
 
     var myselfs = [
-        'PROBLEM SOLVER',
+        'SOFTWARE ENGINEER',
+        'BIBLIOPHILE',
         'TECHNOLOGY ENTHUSIAST',
         'COMPETITIVE PROGRAMMING ENTHUSIAST',
-        'FULL STACK DEVELOPER',
-        'SOFTWARE ENGINEER'
+        'FULL STACK DEVELOPER'
     ];
     var my = 0;
 
