@@ -1,7 +1,10 @@
-
+html {
+	margin: 0;
+}
 
 body{
 	font-family: 'Source Sans Pro', sans-serif;
+	margin: 0;
 }
 
 
@@ -77,6 +80,7 @@ body{
 
 
 .page-section{
+	margin-top: 200px;
 	min-height: 600px;
 }
 
